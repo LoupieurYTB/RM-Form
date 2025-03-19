@@ -1,0 +1,141 @@
+*
+    {
+        margin: 0; padding: 0
+    }
+header
+    {
+        min-width: 32.5rem;
+        background-color: rgb(223, 217, 170);
+        align-items: center; /* Aligner les éléments dedans entre eux */
+        font-size: 2.5rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 700;
+        display: flex;
+        outline: rgb(200, 183, 125) 0.25rem solid;
+        margin-bottom: 7.5rem;
+    }
+#logo
+    {
+        height: 15rem; width: 15rem;
+        padding: 1.5rem; /* Mettre une marge intérieure */
+        gap: 1.5rem; /* Espacer les éléments dedans entre eux */
+    }
+form
+    {
+        margin: auto;
+        max-width: 90rem
+    }
+fieldset
+    {
+        display: block;
+        margin: 2rem;
+        font-size: 1.25rem;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 2rem;
+        border: 0.2rem rgba(0, 0, 0, 0.25) solid;
+    }
+legend
+    {
+        font-size: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        display: block;
+        margin-bottom: 1rem;
+        padding-left: 1rem; padding-right: 1rem;
+        background-color: rgb(226, 226, 226);
+        border-radius: 0.35rem;
+    }
+input, select
+    {
+        background-color: rgb(247, 247, 247);
+        display: block;
+        padding: 0.5rem;
+        font-size: 1.15rem;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 1rem; margin-top: 0.2rem;
+        border-radius: 0.5rem;
+        border: 0.15rem rgba(0, 0, 0, 0.6) solid;
+    }
+select
+    {
+        padding: 1.5rem;
+        overflow: hidden;
+        background-color: rgb(247, 247, 247);
+        border-radius: 0.5rem;
+        border: 0.15rem rgba(0, 0, 0, 0.6) solid;
+    }
+select[size="1"]
+    {
+        padding: 0.5rem;
+    }
+select::content
+    {
+        background-color: rgb(215, 215, 215);
+    }
+#confirmer
+    {
+		color: rgb(0, 70, 192);
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 2rem;
+        padding: 1.15rem 1.75rem;
+        background-color: rgb(88, 194, 255);
+        font-size: 1.5rem;
+        cursor: pointer;
+        border: 0.3rem rgba(0, 118, 222, 0.35) solid;
+		transition: 
+			background-color 0.15s ease,
+			scale 0.15s ease,
+			border 0.15s ease;
+    }
+#confirmer:hover
+    {
+        background-color: rgb(128, 232, 255);
+		border: 0.3rem rgba(29, 171, 222, 0.35) solid;
+		scale: 102%;
+		transition: 
+			background-color 0.15s ease,
+			scale 0.15s ease,
+			border 0.15s ease;
+    }
+#confirmer:active
+    {
+        background-color: rgb(78, 179, 222);
+		border: 0.3rem rgba(0, 79, 176, 0.35) solid;
+		scale: 98%;
+		transition: 
+			background-color 0.25s ease,
+			scale 0.25s ease,
+			border 0.25s ease;
+    }
+input:focus
+    {
+        border: 0.25rem rgba(0, 0, 0, 0.3) solid;
+        background-color: #f0f0f0;
+    }
+input[type="radio"]
+    {
+        display: inline;
+    }
+.liste
+    {
+        display: block;
+        background-color: rgb(247, 247, 247);
+        border-radius: 0.5rem;
+        max-width: 15rem;
+        padding: 1rem;
+        padding-bottom: 0.2rem;
+        border-radius: 0.5rem;
+        border: 0.15rem rgba(0, 0, 0, 0.6) solid;
+        margin-bottom: 1rem; margin-top: 0.2rem;
+    }
+footer
+    {
+        background-color: rgb(208, 201, 141);
+        min-width: 32.5rem;
+        height: 10rem;
+        margin-top: 8rem;
+    }
+.align input
+	{
+		display: inline;
+	}

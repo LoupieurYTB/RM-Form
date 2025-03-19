@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>RM Form</title>
+        <link rel="shortcut icon" type="image/x-icon" href="images/RM-Form-Logo.ico" />
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <header>
+            <img src="images/RM-Form-Logo.png" alt="RM Form Logo" id="logo">
+            <span style="color: rgb(197, 66, 0); margin-right: 0.8rem;">RM</span> 
+            <span style="color: rgb(27, 139, 224)">Form</span>
+        </header>
+
+        <form id="formulaire">
+            <fieldset>
+                <legend>Identité</legend>
+
+                Entrez votre prénom :
+                <input type="text" id="prenom" name="prenom" maxlength="20" size="20" placeholder="Prénom" required/>
+
+                Entrez votre nom :
+                <input type="text" id="nom" name="nom" maxlength="25" size="25" placeholder="Nom" required/>
+
+                Entrez votre date de naissance :
+                <input type="date" id="date-de-naissance" name="date-de-naissance" required/>
+
+                Entrez votre sexe :
+                <div class="liste" id="sexe" aria-required>
+                    <input type="radio" name="sexe" id="homme" value="Homme"/>
+                    <label for="homme">Homme</label><br>
+
+                    <input type="radio" name="sexe" id="femme" value="Femme"/>
+                    <label for="femme">Femme</label><br>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Coordonnées</legend>
+
+                Entrez votre adresse mail :
+                <input type="email" name="mail" id="mail" placeholder="exemple@mail.com" maxlength="30" size="30" required/>
+                
+                Entrez votre adresse :
+                <input type="text" name="adresse" id="adresse" maxlength="30" placeholder="00 Rue Exemple, Ville" size="30" required/>
+                
+                Entrez votre code postal :
+                <input type="text" name="code-postal" id="code-postal" minlength="5" maxlength="5" placeholder="00000" size="2" pattern="[0-9]{5}" required style="max-width: 3.2rem;"/>
+                
+                Entrez votre numéro de téléphone :
+                <input type="tel" name="numero-de-telephone" id="numero-de-telephone" minlength="10" maxlength="10" size="8" placeholder="0000000000" pattern="0[4-7]{1}[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}" required style="max-width: 6.4rem;"/>
+            </fieldset>
+
+            <fieldset>
+                <legend>Autres informations</legend>
+
+                Entrez votre groupe sanguin :
+                <select name="groupe-sanguin" id="groupe-sanguin" size="12" required>
+                    <option value="A"> A</option>
+                    <option value="A+"> A+</option>
+                    <option value="A-"> A-</option>
+                    <option value="B"> B</option>
+                    <option value="B+"> B+</option>
+                    <option value="B-"> B-</option>
+                    <option value="O"> O</option>
+                    <option value="O+"> O+</option>
+                    <option value="O-"> O-</option>
+                    <option value="AB"> AB</option>
+                    <option value="AB+"> AB+</option>
+                    <option value="AB-"> AB-</option>
+                </select>
+                
+                Entrez votre religion :
+                <select name="religion" size="1" id="religion" required>
+                    <option value="Autre" selected> Autre</option>
+                    <option value="Christianisme"> Christianisme</option>
+                    <option value="Christianisme orthodoxe"> Christianisme orthodoxe</option>
+                    <option value="Catholicisme"> Catholicisme</option>
+                    <option value="Islam"> Islam</option>
+                    <option value="Judaïsme"> Judaïsme</option>
+                    <option value="Bouddhisme"> Bouddhisme</option>
+                    <option value="Hindouisme"> Hindouisme</option>
+                </select>
+
+                Êtes vous alcoolique ?
+                <div class="liste" id="liste-alcoolisme" aria-required>
+                    <input type="radio" name="alcoolisme" id="alcoolique" value="Oui"/>
+                    <label for="alcoolique">Oui</label><br>
+
+                    <input type="radio" name="alcoolisme" id="pas-alcoolique" value="Non"/>
+                    <label for="pas-alcoolique">Non</label><br>
+                </div>
+
+                Êtes vous con ?
+                <div class="liste" id="liste-etre-con" aria-required>
+                    <input type="radio" name="etre-con" id="con" value="Oui" checked/>
+                    <label for="con">Oui</label><br>
+
+                    <input type="radio" name="etre-con" id="pas-con" value="Non"/>
+                    <label for="pas-con">Non</label><br>
+                </div>
+
+                Êtes vous puceau ?
+                <div class="liste" id="liste-etre-puceau" aria-required>
+                    <input type="radio" name="etre-puceau" id="puceau" value="Oui"/>
+                    <label for="puceau">Oui</label><br>
+
+                    <input type="radio" name="etre-puceau" id="pas-puceau" value="Non"/>
+                    <label for="pas-puceau">Non</label><br>
+                </div>
+
+                Entrez votre taille :
+				<div class="align" id="taille">
+                	<input type="number" name="taille" id="valeur" min="0.1" size="2" step="0.1" placeholder="1,0" value="1.0" required style="max-width: 3rem;"> m
+				</div>
+
+                Entrez vos mots de passe :
+                <input type="text" name="mdp" id="mdp" required>
+
+                Entrez votre numéro de carte bancaire :
+                <input type="text" name="numero-cb" id="numero-cb" placeholder="000 000 000 000" minlength="15" maxlength="15" size="11" pattern="[0-9]{3} [0-9]{3} [0-9]{3} [0-9]{3}" required style="max-width: 8.75rem;">
+
+                Entrez votre code PIN de carte bancaire :
+                <input type="text" name="code-pin-cb" id="code-pin-cb" placeholder="0000" minlength="4" maxlength="4" size="1" pattern="[0-9]{4}" required style="max-width: 2.6rem;">
+
+				Entrez votre pictogramme de carte bancaire :
+                <input type="text" name="pictogramme-cb" id="pictogramme-cb" placeholder="000" minlength="3" maxlength="3" size="1" pattern="[0-9]{3}" required style="max-width: 2rem;">
+
+				Entrez la date d'expiration de votre carte bancaire :
+				<div class="align" id="date-expiration-cb">
+					<input type="text" name="mois" id="mois" minlength="2" maxlength="2" size="1" placeholder="MM" pattern="[0-12]{2}" required style="max-width: 2rem;"> <label>/</label>
+					<input type="text" name="annee" id="annee" minlength="2" maxlength="2" size="1" placeholder="YY" pattern="[0-99]{2}" required style="max-width: 2rem;">
+				</div>
+            </fieldset>
+
+            <input id="confirmer" type="submit" value="Télécharger le fichier texte des réponses au formulaire" />
+        </form>
+
+        <footer></footer>
+
+        <script src="index.js"></script>
+    </body>
+</html>
